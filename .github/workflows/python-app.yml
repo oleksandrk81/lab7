@@ -13,5 +13,6 @@ jobs:
         python-version: "3.10"
     - name: Run Tests
       run: |
+        export PYTHONPATH=$PYTHONPATH:$(pwd)/Lab7
         python -m doctest Lab7/consultation.py
         python -m unittest Lab7/test_consultation.py
