@@ -13,6 +13,5 @@ jobs:
         python-version: "3.10"
     - name: Run Tests
       run: |
-        cd lab7
-        python -m doctest consultation.py
-        python -m unittest test_consultation.pyy
+        python -m doctest Lab7/consultation.py
+        python -m unittest Lab7/test_consultation.py
