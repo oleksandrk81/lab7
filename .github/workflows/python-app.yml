@@ -11,7 +11,8 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: "3.10"
-    - name: Run Tests
+ - name: Run Tests
       run: |
-        python -m doctest lab7/consultation.py
-        python -m unittest lab7/test_consultation.py
+        cd lab7
+        python -m doctest consultation.py
+        python -m unittest test_consultation.py
